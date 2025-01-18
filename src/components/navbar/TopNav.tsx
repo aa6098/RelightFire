@@ -34,6 +34,7 @@ export default function App() {
         content: ["data-[active=true]:bg-purple-700"],
         toggleIcon: ["text-amber-500", "font-bold"],
         menu: ["bg-indigo-100"],
+        toggle: ["h-10", "w-10", "bg-indigo-700", "rounded-full"],
       }}
       isBordered
       isMenuOpen={isMenuOpen}
@@ -49,8 +50,8 @@ export default function App() {
         <NavbarBrand>
           <FaFireAlt className="text-amber-500 text-3xl" />
           <p className="ml-1 font-bold text-inherit">
-            <span className="text-orange-100">Relight</span>
-            <span className="text-red-200">Fire</span>
+            <span className="text-amber-300">Relight</span>
+            <span className="text-red-500">Fire</span>
           </p>
         </NavbarBrand>
       </NavbarContent>
@@ -60,8 +61,8 @@ export default function App() {
           <FaFireAlt className="text-amber-500 text text-3xl" />
 
           <p className="m-1 font-bold text-inherit">
-            <span className="text-orange-100">Relight</span>
-            <span className="text-red-200">Fire</span>
+            <span className="text-amber-300">Relight</span>
+            <span className="text-red-500">Fire</span>
           </p>
         </NavbarBrand>
         {/* Expanded Menu Items */}
