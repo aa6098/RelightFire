@@ -49,10 +49,10 @@ export default function App() {
       <NavbarContent className="sm:hidden  pr-3">
         <NavbarBrand>
           <FaFireAlt className="text-amber-500 text-3xl" />
-          <p className="ml-1 font-bold text-inherit">
+          <Link href="/" className="ml-1 font-bold text-inherit">
             <span className="text-amber-300">Relight</span>
             <span className="text-red-500">Fire</span>
-          </p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -60,10 +60,10 @@ export default function App() {
         <NavbarBrand>
           <FaFireAlt className="text-amber-500 text text-3xl" />
 
-          <p className="m-1 font-bold text-inherit">
+          <Link href="/" className="ml-1 font-bold text-inherit">
             <span className="text-amber-300">Relight</span>
             <span className="text-red-500">Fire</span>
-          </p>
+          </Link>
         </NavbarBrand>
         {/* Expanded Menu Items */}
         {menuItems.map(

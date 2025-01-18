@@ -17,9 +17,16 @@ function RegisterForm() {
   });
   const onSubmit = async (data: RegisterSchema) => {
     const result = await registerUser(data);
+    if (result.status === "success") {
+      console.log("Success registration");
+    } else {
+      if (Array.isArray(result.error)) {
+        console.log("error");
+      }
+    }
   };
   return (
-    <Card className="md:w-2/5 w-max mx-0 md:mx-auto">
+    <Card className="w-4/5  md:w-3/5 lg:w-2/5 mx-auto">
       <CardHeader className="flex flex-col items-center justify-center">
         <div className="flex flex-col gap-2 items-center justify-center text-indigo-700">
           <FaLock size={30} />
